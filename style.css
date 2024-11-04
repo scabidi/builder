@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+#toolbar {
+    display: flex;
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+
+.element {
+    padding: 10px;
+    margin: 5px;
+    background-color: #d0d0d0;
+    cursor: grab;
+}
+
+#canvas {
+    border: 1px solid #ccc;
+    min-height: 400px;
+    padding: 10px;
+}
+
+.element[contenteditable] {
+    outline: none;
+}
+
+/* Alignment toolbar styles */
+#alignToolbar {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    display: none; /* Initially hidden */
+}
+
+.hidden {
+    display: none;
+}
+
+.align-btn {
+    margin: 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

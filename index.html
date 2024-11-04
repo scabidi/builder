@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Website Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Drag and Drop Website Builder</h1>
+        <button id="exportBtn">Export</button>
+        <input type="file" id="importBtn" />
+    </header>
+    <div id="toolbar">
+        <div class="element" draggable="true" data-type="text">Text</div>
+        <div class="element" draggable="true" data-type="image">Image</div>
+        <input type="file" id="imageUpload" style="display: none;" accept="image/*" />
+    </div>
+    <div id="canvas"></div>
+    <!-- Alignment toolbar -->
+    <div id="alignToolbar" class="hidden">
+        <button class="align-btn" data-align="left">Left</button>
+        <button class="align-btn" data-align="center">Center</button>
+        <button class="align-btn" data-align="right">Right</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
